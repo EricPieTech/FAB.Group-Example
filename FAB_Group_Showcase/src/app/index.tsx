@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 //npm install react-native-paper
-//npm install react-native-safe-area-context - need?
+//npm install react-native-safe-area-context
 //npm install @react-native-vector-icons/material-design-icons
 export default function Index() {
   return (
