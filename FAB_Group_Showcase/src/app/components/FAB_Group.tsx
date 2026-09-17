@@ -3,11 +3,8 @@ import { FAB, PaperProvider, Portal } from "react-native-paper";
 
 const FAB_Group = () => {
   const [state, setState] = React.useState({ open: false });
-
   const onStateChange = ({ open }) => setState({ open });
-
   const { open } = state;
-
   return (
     <PaperProvider>
       <Portal>
@@ -36,7 +33,7 @@ const FAB_Group = () => {
           onStateChange={onStateChange}
           onPress={() => {
             if (open) {
-              // do something if the speed dial is open
+              console.log("HI");
             }
           }}
         />
