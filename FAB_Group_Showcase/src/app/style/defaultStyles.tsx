@@ -13,7 +13,7 @@ const defaultSyles = StyleSheet.create({
   },
 
   containerMinor: {
-    flex: 1,
+    //flex: 1,
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
@@ -21,7 +21,7 @@ const defaultSyles = StyleSheet.create({
     borderColor: colors.secondary,
     borderRadius: 5,
     borderWidth: 5,
-    height: 100,
+    height: 400,
     width: 700,
   },
 
@@ -34,15 +34,16 @@ const defaultSyles = StyleSheet.create({
     borderColor: colors.secondary,
     borderRadius: 5,
     borderWidth: 5,
-    height: 300,
+    height: 330,
     width: 650,
   },
 
   containerButtons: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
+    // alignItems: "center",
     flexDirection: "row",
+    marginLeft: 80,
   },
 
   containerCandidates: {

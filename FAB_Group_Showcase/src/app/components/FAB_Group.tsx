@@ -1,5 +1,6 @@
 import * as React from "react";
 import { FAB, PaperProvider, Portal } from "react-native-paper";
+import colors from "../style/colors";
 
 const FAB_Group = () => {
   const [state, setState] = React.useState({ open: false });
@@ -11,23 +12,18 @@ const FAB_Group = () => {
         <FAB.Group
           open={open}
           visible
-          icon={open ? "calendar-today" : "plus"}
+          icon={open ? "close" : "eye-outline"}
           actions={[
-            { icon: "plus", onPress: () => console.log("Pressed add") },
-            {
-              icon: "star",
-              label: "Star",
-              onPress: () => console.log("Pressed star"),
-            },
             {
               icon: "email",
-              label: "Email",
-              onPress: () => console.log("Pressed email"),
+              label: "Cabinet",
+              onPress: () => console.log("Shows cabinet"),
             },
             {
-              icon: "bell",
-              label: "Remind",
-              onPress: () => console.log("Pressed notifications"),
+              icon: "plus",
+              label: "Donate",
+              color: colors.morgulGreen,
+              onPress: () => console.log("Opens Donate menu"),
             },
           ]}
           onStateChange={onStateChange}

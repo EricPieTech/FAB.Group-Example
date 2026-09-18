@@ -13,6 +13,7 @@ import CandidateBox from "../app/components/CandidateBox";
 import TextField from "../app/components/TextField";
 import colors from "../app/style/colors";
 import defaultSyles from "../app/style/defaultStyles";
+import FAB_Group from "./components/FAB_Group";
 
 export default function Index() {
   const [showMoney, setShowMoney] = useState<boolean>(false);
@@ -84,6 +85,7 @@ export default function Index() {
             changeData={changeMoney}
           />
           <View style={defaultSyles.containerButtons}>
+            <FAB_Group />
             <Button
               title="Donate?"
               color={colors.morgulGreen}
