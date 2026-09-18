@@ -1,5 +1,5 @@
 import { TextInput } from "react-native";
-import colors from "../styles/colors";
+import colors from "../style/colors";
 //googled how to get the parent function to access text field responses
 type propsType = {
   placeHolder: string;

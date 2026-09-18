@@ -1,13 +1,6 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  ImageSourcePropType,
-} from "react-native";
 import React from "react";
-import defaultSyles from "../styles/defaultStyles";
-import colors from "../styles/colors";
+import { Image, ImageSourcePropType, Text, View } from "react-native";
+import defaultSyles from "../style/defaultStyles";
 //import { Button } from "expo-router/build/react-navigation";
 //searched from google AI to find out how to set imageSrc
 type propsType = {
