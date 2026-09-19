@@ -6,7 +6,17 @@ const FAB_Group = () => {
   const [state, setState] = React.useState({ open: false });
   const onStateChange = ({ open }) => setState({ open });
   const { open } = state;
-  const [moneyCount, setMoneyCount] = React.useState<number>(0);
+  const [voteCount, setVoteCount] = React.useState<number>(0);
+    //loop creation https://react.dev/reference/react/useEffect
+    React.useEffect(() => {
+      const interval = setInterval(() => {
+        //make random number
+        const randNum = Math.floor(Math.random() * 100000) + 1;
+        //set money count
+        setVoteCount((voteCount) => voteCount + randNum);
+      }, 1000); // 1000 ms or 1 second
+      return () => clearInterval(interval); //clears interval for next loop
+    }, []); //stops overflow
   return (
     <PaperProvider>
       <Portal>
@@ -24,7 +34,7 @@ const FAB_Group = () => {
               icon: "plus",
               label: "Votes",
               color: colors.morgulGreen,
-              onPress: () => alert("Sauron currently has " + ("Fix") + " votes"),
+              onPress: () => alert("Sauron currently has " + (voteCount) + " votes"),
             },
           ]}
           onStateChange={onStateChange}

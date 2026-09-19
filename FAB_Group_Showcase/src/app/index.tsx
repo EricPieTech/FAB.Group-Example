@@ -53,7 +53,6 @@ export default function Index() {
       }
     }
   }
-
   function generateDonationPledge(name: string, money: string) {
     const newString =
       "Congratulations " +
@@ -63,7 +62,6 @@ export default function Index() {
       " currency will aid in Sauron's great effort to save America!";
     changePledge(newString);
   }
-
   return (
     <View style={defaultSyles.container}>
       <Text style={defaultSyles.title}>Sauron 2028</Text>
