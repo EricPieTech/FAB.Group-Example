@@ -6,6 +6,7 @@ const FAB_Group = () => {
   const [state, setState] = React.useState({ open: false });
   const onStateChange = ({ open }) => setState({ open });
   const { open } = state;
+  const [moneyCount, setMoneyCount] = React.useState<number>(0);
   return (
     <PaperProvider>
       <Portal>
@@ -16,14 +17,14 @@ const FAB_Group = () => {
           actions={[
             {
               icon: "email",
-              label: "Cabinet",
-              onPress: () => console.log("Shows cabinet"),
+              label: "Fan Mail",
+              onPress: () => alert("While Sauron is greatful for your intrest in his campaign, he is currently not accepting fan mail."),
             },
             {
               icon: "plus",
-              label: "Donate",
+              label: "Votes",
               color: colors.morgulGreen,
-              onPress: () => console.log("Opens Donate menu"),
+              onPress: () => alert("Sauron currently has " + ("Fix") + " votes"),
             },
           ]}
           onStateChange={onStateChange}

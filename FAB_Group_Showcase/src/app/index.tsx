@@ -1,5 +1,4 @@
 import { Image, ScrollView, Text, View } from "react-native";
-// import FAB_Group from "./components/FAB_Group";
 //npm install react-native-paper
 //npm install react-native-safe-area-context
 //npm install @react-native-vector-icons/material-design-icons
@@ -14,7 +13,6 @@ import TextField from "../app/components/TextField";
 import colors from "../app/style/colors";
 import defaultSyles from "../app/style/defaultStyles";
 import FAB_Group from "./components/FAB_Group";
-
 export default function Index() {
   const [showMoney, setShowMoney] = useState<boolean>(false);
   const [showCab, setShowCab] = useState<boolean>(false);
