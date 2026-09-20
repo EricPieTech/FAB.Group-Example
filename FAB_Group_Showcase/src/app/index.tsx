@@ -81,7 +81,6 @@ export default function Index() {
             changeData={changeMoney}
           />
           <View style={defaultSyles.containerButtons}>
-            <FAB_Group />
             <Button
               title="Donate?"
               color={colors.morgulGreen}
@@ -164,6 +163,9 @@ export default function Index() {
             </ScrollView>
           </View>
         )}
+        <View style={[{marginTop:400},{marginLeft:80}]}>
+          <FAB_Group />
+        </View>
       </View>
     </View>
   );

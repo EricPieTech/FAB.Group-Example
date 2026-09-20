@@ -4,7 +4,7 @@ import colors from "../style/colors";
 
 const FAB_Group = () => {
   const [state, setState] = React.useState({ open: false });
-  const onStateChange = ({ open }) => setState({ open });
+  const onStateChange = ({ open }) => setState({ open }); //Shows error, but works fine
   const { open } = state;
   const [voteCount, setVoteCount] = React.useState<number>(0);
     //loop creation https://react.dev/reference/react/useEffect
@@ -24,11 +24,15 @@ const FAB_Group = () => {
           open={open}
           visible
           icon={open ? "close" : "eye-outline"}
+          color= {colors.textColor}
+          rippleColor={colors.primary}
+          fabStyle={{backgroundColor: colors.titleColor}}
           actions={[
             {
               icon: "email",
               label: "Fan Mail",
-              onPress: () => alert("While Sauron is greatful for your intrest in his campaign, he is currently not accepting fan mail."),
+              labelTextColor: colors.titleColor,
+              onPress: () => alert("While Sauron is pleased with your intrest in his campaign, he is currently not accepting fan mail."),
             },
             {
               icon: "plus",
@@ -40,7 +44,7 @@ const FAB_Group = () => {
           onStateChange={onStateChange}
           onPress={() => {
             if (open) {
-              console.log("HI");
+              console.log("This is what happens when you close the FAB.Group");
             }
           }}
         />

@@ -41,9 +41,8 @@ const defaultSyles = StyleSheet.create({
   containerButtons: {
     flex: 1,
     justifyContent: "center",
-    // alignItems: "center",
+    alignItems: "center",
     flexDirection: "row",
-    marginLeft: 80,
   },
 
   containerCandidates: {
