@@ -21,8 +21,8 @@ const defaultSyles = StyleSheet.create({
     borderColor: colors.secondary,
     borderRadius: 5,
     borderWidth: 5,
-    height: 400,
-    width: 700,
+    height: 350,
+    width: 800,
   },
 
   containerBox: {
