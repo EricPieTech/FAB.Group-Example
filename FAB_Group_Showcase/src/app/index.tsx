@@ -163,9 +163,9 @@ export default function Index() {
             </ScrollView>
           </View>
         )}
-        <View style={[{marginTop:400},{marginLeft:80}, {marginBottom:40}]}>
-          <FAB_Group />
-        </View>
+      </View>
+      <View style={[{ marginLeft: 810 }, { marginBottom: 40 }]}>
+        <FAB_Group />
       </View>
     </View>
   );
